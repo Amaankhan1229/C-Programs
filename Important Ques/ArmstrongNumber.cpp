@@ -5,12 +5,12 @@ int main()
 int num,num1,sum=0,rem,cube,org,digit=0;
 printf("Enter any number:");
 scanf("%d",&num);
-org=num;
-num1=num;
+org=num; // storing number in original
+num1=num; // storing user's number in num1
 while(num>0)
 {
     digit+=1;
-    num=num/10;
+    // num=num/10;   123/10=12-> 12/10-> 1->1/10-> 0.1->1 coz int digit
 }
 printf("No of digits %d in number %d is:",digit,org);
 while(num1>0)
